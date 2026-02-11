@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "build:frontend": "cd ../frontend && npm run build",
+    "copy:frontend": "node scripts/copy-frontend.mjs",
+    "build": "npm run build:frontend && npm run copy:frontend",
+    "start:prod": "node src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

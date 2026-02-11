@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 dist/
 build/
+# Build do frontend copiado para servir em produção (gerado por npm run build)
+public/*
+!public/.gitkeep
